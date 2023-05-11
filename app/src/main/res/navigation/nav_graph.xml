@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_pictures">
+
+    <fragment
+        android:id="@+id/fragment_pictures"
+        android:name="dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentPictures"
+        android:label="PicturesViewModel"
+        tools:layout="@layout/fragment_pictures">
+        <action
+            android:id="@+id/action_fragment_pictures_to_fragmentFullScreen"
+            app:destination="@id/fragmentFullScreen" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.imageloaderdagger2.presentation.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/fragmentFullScreen"
+        android:name="dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentFullScreen"
+        android:label="FragmentFullScreen">
+
+        <argument android:name="link"
+            app:argType="string"/>
+    </fragment>
+</navigation>
