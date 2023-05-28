@@ -1,9 +1,11 @@
 package dev.ronnie.imageloaderdagger2.di.modules
 
+import android.webkit.WebView
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.imageloaderdagger2.presentation.viewmodels.MemoryGameViewModel
 import com.example.imageloaderdagger2.presentation.viewmodels.RegisterViewModel
+import com.example.imageloaderdagger2.presentation.viewmodels.WebViewViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
@@ -14,6 +16,11 @@ import kotlin.reflect.KClass
 @Suppress("unused")
 @Module
 abstract class ViewModelModule {
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(WebViewViewModel::class)
+    abstract fun bindWebViewViewModel(webViewViewModel: WebViewViewModel): ViewModel
 
     @Binds
     @IntoMap

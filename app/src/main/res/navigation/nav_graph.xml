@@ -17,9 +17,16 @@
         <action
             android:id="@+id/action_registerFragment2_to_memoryGameFragment"
             app:destination="@id/memoryGameFragment" />
+        <action
+            android:id="@+id/action_registerFragment2_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/memoryGameFragment"
         android:name="com.example.imageloaderdagger2.presentation.fragments.MemoryGameFragment"
         android:label="MemoryGameFragment" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.imageloaderdagger2.presentation.fragments.WebViewFragment"
+        android:label="WebViewFragment" />
 </navigation>

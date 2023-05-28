@@ -9,6 +9,7 @@ import android.widget.EditText
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.imageloaderdagger2.dataa.model.User
 import com.example.imageloaderdagger2.presentation.viewmodels.RegisterViewModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -48,6 +49,9 @@ class RegisterFragment: DaggerFragment(R.layout.register_home_fragment) {
 
         binding?.readButton2?.setOnClickListener {
             view?.findNavController()?.navigate(R.id.action_registerFragment2_to_memoryGameFragment)
+        }
+        binding?.webView?.setOnClickListener{
+            view?.findNavController()?.navigate(R.id.action_registerFragment2_to_webViewFragment)
         }
 
         return binding!!.root
