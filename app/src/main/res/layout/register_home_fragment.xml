@@ -24,7 +24,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-<!--            android:text="@={myViewModel.inputLastName}"/>-->
 
         <TextView
             android:id="@+id/firstNameText"
@@ -82,12 +81,10 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
-<!--        android:text="@={myViewModel.inputUsername}"-->
 
         <EditText
             android:id="@+id/email"
@@ -99,12 +96,10 @@
             android:ems="10"
             android:importantForAutofill="no"
             android:inputType="textPersonName"
-
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordTextView" />
-<!--        android:text="@={myViewModel.inputPassword}"-->
 
         <Button
             android:id="@+id/saveButton"
@@ -117,7 +112,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
-<!--        android:onClick="@{()->myViewModel.sumbitButton()}"-->
 
         <Button
             android:id="@+id/readButton2"
@@ -132,7 +126,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
-        <!--        android:onClick="@{()->myViewModel.sumbitButton()}"-->
 
         <Button
             android:id="@+id/webView"
