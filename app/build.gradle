@@ -3,9 +3,11 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
+    id 'com.google.gms.google-services'
 }
 
 android {
+
     compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
@@ -63,6 +65,7 @@ dependencies {
     implementation 'androidx.leanback:leanback-paging:1.1.0-alpha09'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'com.google.firebase:firebase-database:20.0.4'
     kapt "com.google.dagger:dagger-compiler:2.44"
     kapt "com.google.dagger:dagger-android-processor:2.27"
 

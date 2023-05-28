@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="ButtonsStyle">
+        <item name="android:layout_width">@dimen/buttons_height_and_width</item>
+        <item name="android:layout_height">@dimen/buttons_height_and_width</item>
+        <item name="android:background">@drawable/gamecontroller</item>
+    </style>
+
+</resources>

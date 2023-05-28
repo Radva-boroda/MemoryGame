@@ -4,27 +4,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragment_pictures">
+    app:startDestination="@id/registerFragment2">
 
-    <fragment
-        android:id="@+id/fragment_pictures"
-        android:name="dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentPictures"
-        android:label="PicturesViewModel"
-        tools:layout="@layout/fragment_pictures">
-        <action
-            android:id="@+id/action_fragment_pictures_to_fragmentFullScreen"
-            app:destination="@id/fragmentFullScreen" />
-    </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.example.imageloaderdagger2.presentation.MainActivity"
         android:label="MainActivity" />
     <fragment
-        android:id="@+id/fragmentFullScreen"
-        android:name="dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentFullScreen"
-        android:label="FragmentFullScreen">
-
-        <argument android:name="link"
-            app:argType="string"/>
+        android:id="@+id/registerFragment2"
+        android:name="com.example.imageloaderdagger2.presentation.fragments.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment2_to_memoryGameFragment"
+            app:destination="@id/memoryGameFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/memoryGameFragment"
+        android:name="com.example.imageloaderdagger2.presentation.fragments.MemoryGameFragment"
+        android:label="MemoryGameFragment" />
 </navigation>

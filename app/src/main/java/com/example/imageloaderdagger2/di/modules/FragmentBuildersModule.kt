@@ -2,19 +2,20 @@ package dev.ronnie.imageloaderdagger2.di.modules
 
 
 
+import com.example.imageloaderdagger2.presentation.fragments.MemoryGameFragment
+import com.example.imageloaderdagger2.presentation.fragments.RegisterFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentFullScreen
-import dev.ronnie.imageloaderdagger2.presentation.fragments.FragmentPictures
 
 
 @Suppress("unused")
 @Module
 abstract class FragmentBuildersModule {
-    @ContributesAndroidInjector
-    abstract fun contributePictureFragment(): FragmentPictures
 
     @ContributesAndroidInjector
-    abstract fun contributeFullScreenFragment(): FragmentFullScreen
+    abstract fun contributeMemoryGameFragment(): MemoryGameFragment
+
+    @ContributesAndroidInjector
+    abstract fun contributeRegisterFragment(): RegisterFragment
 
 }
